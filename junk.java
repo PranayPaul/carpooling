@@ -12,9 +12,9 @@
 		    }
 		    double divx = localx / globalx;
 		    double divy = localy / globaly;
-		    if( divx < 0 ) {
+		    if( divx > 0 ) {
 		    	divx = 0;
-		    if( divy < 0 )
+		    if( divy > 0 )
 		    	divy = 0;
 		    double track = -( divx + divy );
 		    return track;
