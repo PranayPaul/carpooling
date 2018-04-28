@@ -6,21 +6,18 @@
 		    double localy = p.y - d.y;
 		    double currentx = endx - d.x;
 		    double currenty = endy - d.y;
-		    double value;
+		    double valuex , valuey;
 		    if( globalx * localx <= 0 ) {
-		    	valuex = math.abs(localx);
+		    	valuex = math.abs( localx );
 		    }
 		    else
 			valuex = 0;
 		    if( globaly * localy <= 0 ){
-			    valuey = math.abs(localy);
+			    valuey = math.abs( localy );
 		    }
 		    else
 	               valuey = 0;
-		   double backtrack = valuex + valuey;
-		    if( globaly == 0 ) {
-		    	valuey == 1;
-		    }
+		    double backtrack = valuex + valuey;
 		    double range = 1.25 * (1 - manhatten( currentx , currenty ) / manhatten( globalx , globaly ));
 		    return backtrack;
 		    }
