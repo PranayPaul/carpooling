@@ -13,10 +13,10 @@
 		    else
 			valuex = 0;
 		    if( globaly * localy <= 0 ){
-			    valuey = math.abs(localx);
+			    valuey = math.abs(localy);
 		    }
 		    else
-	               value = 0;
+	               valuey = 0;
 		   double backtrack = valuex + valuey;
 		    if( globaly == 0 ) {
 		    	valuey == 1;
