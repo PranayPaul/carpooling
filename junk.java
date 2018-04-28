@@ -18,8 +18,9 @@
 		    else
 	               valuey = 0;
 		    double backtrack = valuex + valuey;
-		    double range = 1.25 * (1 - manhattan( currentx , currenty ) / manhattan( globalx , globaly ));
-		    return backtrack;
+		    double r1 = ( 1 + 0.25 );
+		    double r2 = 1 + (0.25 * manhattan( currentx , currenty ) < manhattan( globalx , globaly ) ? (1 - manhattan( currentx , currenty ) / manhattan( globalx , globaly )) : 0);
+		    return math.pow( backtrack , (r1 * r2) );
 		    }
 		    }
 		    
