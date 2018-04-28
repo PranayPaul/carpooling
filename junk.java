@@ -18,7 +18,7 @@
 		    else
 	               valuey = 0;
 		    double backtrack = valuex + valuey;
-		    double range = 1.25 * (1 - manhatten( currentx , currenty ) / manhatten( globalx , globaly ));
+		    double range = 1.25 * (1 - manhattan( currentx , currenty ) / manhattan( globalx , globaly ));
 		    return backtrack;
 		    }
 		    }
